@@ -1,0 +1,356 @@
+
+
+
+/* /////////////////////    Transition     /////////////////// */
+
+
+
+@-webkit-keyframes menuslide {
+    100% { left: -80px; }
+}
+
+@keyframes menuslide {
+    100% { left: -80px; }
+}
+  @-webkit-keyframes slide {
+    100% { left: -100px; }
+}
+
+@keyframes slide {
+    100% { left: -100px; }
+}
+@-webkit-keyframes slide2 {
+    100% { 
+        left: 50px; 
+        opacity: 1;}
+}
+
+@keyframes slide2 {
+    100% { 
+        left: 50px; 
+        opacity: 1; }
+}
+
+
+
+@-webkit-keyframes slideup {
+    100% { top: 71vh; opacity: 1; }
+}
+
+@keyframes slideup {
+    100% { top: 71vh; opacity: 1;}
+}
+
+
+
+
+/* /////////////////////    Page     /////////////////// */
+/* html{
+    /* scroll-behavior: smooth; */
+    /* margin:0;
+    padding:0; */
+
+
+body{
+    /* position:fixed; */
+	background-color:#c5b8b2;
+    width: 100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    margin:0; 
+    padding:0; 
+    /* background-image: url(asset/white-paper-texture-with-flecks.jpg); */
+    /* background-repeat:repeat;
+    background-size:100%;
+    background-blend-mode: multiply; */
+    overflow:hidden;
+}
+/* body::after {
+    content: "";
+    background: url(asset/white-paper-texture-with-flecks.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: sticky;
+    z-index: -4;   
+  } */
+#mycanvas{
+    position: absolute; 
+    /* position:-webkit-sticky; */
+    top:0;
+    
+    display:block;
+    width:100%;
+    height:100%;
+    /* left: 50; top: 50%; */
+    z-index: 0;
+  
+}
+ 
+
+
+
+
+.menu{
+   
+    /* transform-origin: center; */
+
+
+    position:fixed;
+    height:100vh;
+    width:150px;
+    top: 10px;
+    left:-100px;
+    z-index: 8;
+     display:block;
+    transition: 0.5s ease-in;
+    -webkit-animation: slide 0.5s forwards;
+    animation: menuslide 0.5s forwards;
+    /* color:#867472; */
+    /* border: 5px solid rebeccapurple; */
+    background-color: transparent;
+    /* border:3px solid red; */
+    overflow:hidden;
+}
+.theonlychild{
+    transform: rotate(-90deg);
+    position: absolute ;
+    height:25px;
+    width:50px;
+    top:10%;
+    left:90px;
+    cursor:pointer;
+    font-size: 1rem;
+    font-family: neue-haas-unica, sans-serif;
+    font-style: normal;
+    font-weight: 300 ;
+    /* outline: none; */
+    /* border-style: none; */
+    border-top: none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid #c5b8b2;
+    background-color: transparent;
+    color:#c5b8b2;
+    cursor:pointer;
+    text-decoration: none;
+    text-align: center;
+ 
+}
+.theonlychild:hover{
+    color:#aa3424;
+    border-bottom: 2px solid #aa3424;
+    transition: color 0.2s ease-in-out;
+    
+}
+.realityGenerator{
+    transform: rotate(-90deg);
+    position: absolute ;
+    height:25px;
+    width:130px;
+    left:50px;
+    top:35%;
+    cursor:pointer;
+    font-size: 1rem;
+    font-family: neue-haas-unica, sans-serif;
+    font-style: normal;
+    font-weight: 300 ;
+    /* outline: none; */
+    /* border-style: none; */
+    border-top: none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid #c5b8b2;
+    color:#c5b8b2;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+
+}
+.realityGenerator:hover{
+    color:#aa3424;
+    border-bottom: 2px solid #aa3424;
+    transition: color 0.2s ease-in-out;
+    
+}
+.menudata{
+    transform: rotate(-90deg);
+    position: absolute;
+    height:25px;
+    width:40px;
+    left:95px;
+    top:60%;
+     z-index: 5; 
+    cursor:pointer;
+    font-size: 1rem;
+    font-family: neue-haas-unica, sans-serif;
+    font-style: normal;
+    font-weight: 300 ;
+    kerning: auto;
+    outline: none;
+    border-style: none;
+    border-top: none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid #c5b8b2;
+    color:#c5b8b2;
+    background-color: transparent;
+    /* display:none; */
+    cursor:pointer;
+    text-decoration: none;
+    text-align: center;
+}
+.menudata:hover{
+    color:#aa3424;
+    border-bottom: 2px solid #aa3424;
+    transition: color 0.2s ease-in-out;
+    
+}
+.menuabout{
+    transform: rotate(-90deg);
+    position: absolute ;
+    height:25px;
+    width:50px;
+    top:81%;
+    left:90px;
+     z-index: 5; 
+    cursor:pointer;
+    font-size: 1rem;
+    font-family: neue-haas-unica, sans-serif;
+    font-style: normal;
+    font-weight: 300 ;
+    kerning: auto;
+    outline: none;
+    border-style: none;
+    border-top: none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid #c5b8b2;
+    color:#c5b8b2;
+    background-color: transparent;
+    /* display:none; */
+    cursor:pointer;
+    text-decoration: none;
+    text-align: center;
+
+}
+.menuabout:hover{
+    color:#aa3424;
+    border-bottom: 2px solid #aa3424;
+    transition: color 0.2s ease-in-out;
+}
+
+
+
+
+
+.mainpagevideo{
+    position:absolute;
+    display:hidden;
+    top:0;
+    left:0;
+    height:100vh;
+    width:80vw;
+    border: 3px solid black;
+    background-color: #867472;
+    z-index: -1;
+}
+.mainpagetext{
+    position:absolute;
+    left:500px;
+    top:300px;
+    font-family: kepler-std-extended-display, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+}
+/* ////////////////////////// */
+.frame{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    z-index: 0;
+}
+
+
+#homebg{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100vh;
+    width:100vw;
+    z-index: -2;
+    overflow:hidden;
+}
+#homebg img{
+    position: absolute;
+    width:100vw;
+    right:0;
+    top:-280px;
+}
+
+#title{
+    position: absolute;
+    top:5vh;
+    right:12vw;
+    width:35vw;
+    height:100vh;
+    /* border:3px solid red; */
+    
+}
+#title img{
+    position:absolute;
+    width:33vw;
+    right:0;
+}
+#homequote{
+    position: absolute;
+    left:12vw;
+    width:50vw;
+    bottom:5vh;
+    height:30vh;
+}
+h{
+    position:absolute;
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: 400;
+    bottom:0;
+    font-style: normal;
+    font-size: 2em;
+    text-align: left;
+    color:#c5b8b2;
+}
+
+#topleft{
+    position: absolute;
+    top:5vh;
+    left:12vw;
+    width:21vw;
+    font-family: neue-haas-unica, sans-serif;
+    font-weight: 400;
+    bottom:0;
+    font-style: normal;
+    font-size: 0.8em;
+    text-align: left;
+    color:#c5b8b2;
+}
+#description{
+    position:absolute;
+    left:12vw;
+    bottom:5vh;
+    width:60vw;
+}
+#description img{
+    position:absolute;
+   bottom:0;
+    width:58vw;
+
+}
